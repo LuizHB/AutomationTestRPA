@@ -26,6 +26,7 @@ Log in
     Input Text    id:email    ${email}
     Input Text    id:passwd    ${password}
     Click Button    id:SubmitLogin
+    Page Should Contain    My account
 
 Log out and close the browser
     Click Element    xpath://a[contains(text(),'Sign out') and @class='logout']
