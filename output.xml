@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.7.5 on win32)" generated="20220513 22:17:32.514" rpa="true" schemaversion="3">
+<suite id="s1" name="BlankPasswordTasks" source="c:\Users\Pc\Documents\GitHub\AutomationTestRPA\UnsuccessfulLogin\BlankPassword\BlankPasswordTasks.robot">
+<test id="s1-t1" name="Unsuccessful login in website" line="14">
+<kw name="Open website">
+<kw name="Open Available Browser" library="RPA.Browser.Selenium">
+<arg>${URL}</arg>
+<doc>Attempts to open a browser on the user's device from a set of
+supported browsers. Automatically downloads a corresponding webdriver
+if none is already installed.</doc>
+<msg timestamp="20220513 22:17:33.547" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220513 22:17:33.569" level="INFO">Created download root directory: C:\Users\Pc\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220513 22:17:33.569" level="INFO">Created symlink directory: C:\Users\Pc\AppData\Local\robocorp\webdrivers</msg>
+<msg timestamp="20220513 22:17:33.570" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg timestamp="20220513 22:17:35.820" level="INFO">Created Chrome browser with arguments: --disable-dev-shm-usage --disable-web-security --allow-running-insecure-content --no-sandbox</msg>
+<msg timestamp="20220513 22:17:35.821" level="INFO" html="true">&lt;p&gt;Attempted combinations:&lt;/p&gt;&lt;div class="doc"&gt;&lt;table&gt;&lt;tr&gt;&lt;th&gt;Browser&lt;/th&gt;&lt;th&gt;Download&lt;/th&gt;&lt;th&gt;Error&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;False&lt;/td&gt;&lt;td&gt;Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Chrome&lt;/td&gt;&lt;td&gt;True&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;</msg>
+<msg timestamp="20220513 22:17:35.821" level="INFO">Opening url 'http://automationpractice.com/index.php'</msg>
+<status status="PASS" starttime="20220513 22:17:33.546" endtime="20220513 22:17:45.319"/>
+</kw>
+<status status="PASS" starttime="20220513 22:17:33.545" endtime="20220513 22:17:45.319"/>
+</kw>
+<kw name="Log in">
+<kw name="Click Element" library="RPA.Browser.Selenium">
+<arg>xpath://a[contains(text(),'Sign in') and @class='login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220513 22:17:45.322" level="INFO">Clicking element 'xpath://a[contains(text(),'Sign in') and @class='login']'.</msg>
+<status status="PASS" starttime="20220513 22:17:45.321" endtime="20220513 22:17:47.580"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>id:email</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220513 22:17:47.581" level="INFO">Typing text 'luiz@mail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20220513 22:17:47.580" endtime="20220513 22:17:47.661"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser.Selenium">
+<arg>id:passwd</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220513 22:17:47.661" level="INFO">Typing text '' into text field 'id:passwd'.</msg>
+<status status="PASS" starttime="20220513 22:17:47.661" endtime="20220513 22:17:47.749"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser.Selenium">
+<arg>id:SubmitLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220513 22:17:47.750" level="INFO">Clicking button 'id:SubmitLogin'.</msg>
+<status status="PASS" starttime="20220513 22:17:47.750" endtime="20220513 22:17:48.659"/>
+</kw>
+<kw name="Page Should Contain" library="RPA.Browser.Selenium">
+<arg>Password is required.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220513 22:17:48.673" level="INFO">Current page contains text 'Password is required.'.</msg>
+<status status="PASS" starttime="20220513 22:17:48.660" endtime="20220513 22:17:48.673"/>
+</kw>
+<status status="PASS" starttime="20220513 22:17:45.320" endtime="20220513 22:17:48.673"/>
+</kw>
+<kw name="Close the browser" type="TEARDOWN">
+<kw name="Close Browser" library="RPA.Browser.Selenium">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220513 22:17:48.674" endtime="20220513 22:17:50.823"/>
+</kw>
+<status status="PASS" starttime="20220513 22:17:48.674" endtime="20220513 22:17:50.823"/>
+</kw>
+<status status="PASS" starttime="20220513 22:17:33.544" endtime="20220513 22:17:50.824"/>
+</test>
+<doc>Unsuccessful Login with blank email in http://automationpractice.com/index.php</doc>
+<status status="PASS" starttime="20220513 22:17:32.524" endtime="20220513 22:17:50.826"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="BlankPasswordTasks">BlankPasswordTasks</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
