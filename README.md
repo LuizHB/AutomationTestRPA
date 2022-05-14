@@ -15,7 +15,7 @@ Based on [AutomationTest](https://github.com/LuizHB/AutomationTest) created befo
 
 ## List of tests:
 - [x] Successful login 
-- [x] Unsuccessful login tests:
+-  Unsuccessful login tests: [x]
     - [x] Blank email
     - [x] Blank password
     - [x] Wrong email
