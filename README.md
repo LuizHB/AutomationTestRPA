@@ -14,11 +14,11 @@ Based on [AutomationTest](https://github.com/LuizHB/AutomationTest) created befo
 
 
 ## List of tests:
-- Successful login 
+- [x] Successful login 
 - Unsuccessful login tests:
-    - Blank email
-    - Blank password
-    - Wrong email
-    - Wrong password
-- Recovery of forgotten password
-- Account creation
+    - [x] Blank email
+    - [x] Blank password
+    - [x] Wrong email
+    - [x] Wrong password
+- [ ] Recovery of forgotten password
+- [ ] Account creation
