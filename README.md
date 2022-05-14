@@ -13,8 +13,8 @@ Project based on Robotic Process Automation + Selenium to automate test processe
 Based on [AutomationTest](https://github.com/LuizHB/AutomationTest) created beforehand. 
 
 
-## List of tests (main method):
-- [x] Successful login 
+## List of tests:
+- Successful login 
 - Unsuccessful login tests:
     - Blank email
     - Blank password
@@ -23,9 +23,3 @@ Based on [AutomationTest](https://github.com/LuizHB/AutomationTest) created befo
 - Recovery of forgotten password
 - Account creation
 
-## Extra tests:
-- Successful purchase with bank wire
-
-## Tests to do:
-- [ ] Successful purchase with check
-- [ ] New clothes and categories
